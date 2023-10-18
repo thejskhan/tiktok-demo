@@ -26,10 +26,13 @@ export default function Tiktok(props: TiktokProps) {
 	return (
 		item && (
 			<div
-				className="overflow-hidden rounded-2xl flex items-center justify-center shadow-lg"
+				className="relative overflow-hidden rounded-2xl flex items-center justify-center shadow-lg"
 				onMouseDown={handleClick}
 			>
-				<div className="pointer-events-none">
+				{isModal && (
+					<div className="absolute inset-0 z-10 cursor-pointer hover:bg-black/60 flex flex-col justify-end" />
+				)}
+				<div className={isModal ? "pointer-events-none" : ""}>
 					<iframe
 						key={item.share_url}
 						height={height ?? 720}
