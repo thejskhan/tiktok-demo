@@ -13,7 +13,7 @@ export default function Small() {
 						Variant - Small
 					</span>
 				</h1>
-				<nav className="w-full py-4 bg-soft-n flex items-center justify-center">
+				<nav className="w-full py-4 bg-light-n flex items-center justify-center">
 					<ul className="flex gap-2">
 						<li>
 							<Link
@@ -50,7 +50,7 @@ export default function Small() {
 					</ul>
 				</nav>
 			</div>
-			<div className="flex flex-wrap gap-4 w-full justify-center py-8">
+			<div className="flex flex-wrap gap-8 w-full justify-center py-8">
 				{data.map((item) => {
 					return (
 						<Tiktok key={item.share_url} item={item} height={320} width={240} />

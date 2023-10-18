@@ -1,4 +1,3 @@
-import Button from "lib/Button";
 import Tiktok from "../components/tiktok";
 import data from "assets/data.json";
 import { Link } from "react-router-dom";
@@ -13,7 +12,7 @@ export default function Small() {
 						Variant - Modal
 					</span>
 				</h1>
-				<nav className="w-full py-4 bg-soft-n flex items-center justify-center">
+				<nav className="w-full py-4 bg-light-n flex items-center justify-center">
 					<ul className="flex gap-2">
 						<li>
 							<Link
@@ -50,7 +49,7 @@ export default function Small() {
 					</ul>
 				</nav>
 			</div>
-			<div className="flex flex-wrap gap-4 w-full justify-center py-8">
+			<div className="flex flex-wrap gap-8 w-full justify-center py-8">
 				{data.map((item) => {
 					return (
 						<Tiktok

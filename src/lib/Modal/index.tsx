@@ -5,10 +5,10 @@ import { type VariantProps, tv } from "tailwind-variants";
 const modal = tv({
 	slots: {
 		container: "relative z-50",
-		backdrop: "bg-black opacity-50 fixed inset-0",
+		backdrop: "bg-black opacity-60 fixed inset-0",
 		scrollable: "fixed inset-0 overflow-y-scroll transform-gpu z-50 p-4",
 		wrapper: "flex min-h-full items-center justify-center w-full",
-		content: "w-max bg-white p-8 rounded-2xl",
+		content: "w-max bg-white p-8 rounded-2xl shadow-2xl shadow-divider-n",
 	},
 });
 
